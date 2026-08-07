@@ -43,6 +43,12 @@ try:
 
 
 
+#by text
+
+
+
+
+
 # close browser
 finally:
     driver.quit()
