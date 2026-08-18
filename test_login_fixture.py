@@ -33,3 +33,8 @@ def test_registration_button_is_displayed(driver):
 def test_login_button_is_enabled(driver):
     button = driver.find_element(By.XPATH, "//button[text()='Login']")
     assert button.is_enabled()
+
+def test_login(driver):
+    driver.find_element(By.CSS_SELECTOR,"[name='email']").send_keys("margo@gmail.com")
+    driver.find_element(By.CSS_SELECTOR,"[name='password']").send_keys("Mmar123456$")
+    driver.find_element(By.CSS_SELECTOR, "[name='login']").click()
